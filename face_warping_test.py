@@ -10,7 +10,7 @@ from ibug.face_detection import RetinaFacePredictor, S3FDPredictor
 from ibug.roi_tanh_warping import *
 from ibug.roi_tanh_warping import reference_impl as ref
 
-
+print("")
 @torch.no_grad()
 def test_pytorch_impl(device: str, frame: np.ndarray, face_box: np.ndarray, target_width: int, target_height: int,
                       polar: int, offset: float, restore: bool, square: bool, nearest: bool,
